@@ -1,0 +1,2 @@
+Wang, Yinxue, et al. "Automated functional analysis of astrocytes from chronic time-lapse calcium imaging data." Frontiers in neuroinformatics 11 (2017): 48.
+Wang, Yizhi, et al. "Accurate quantification of astrocyte and neurotransmitter fluorescence dynamics for single-cell and population-level physiology." Nature neuroscience 22.11 (2019): 1936-1944.
