@@ -15,7 +15,7 @@ BILCO is implemented in **C++** language with a **MATLAB** wrapper. The reposito
 ## Joint alignment and GTW
 The joint alignment problem can be formulated as
 
-$\min_{P_n, n = 1,2,...,N} \left( \sum_{n=1}^N cost(P_n) + \kappa \sum_{(m,n)\in Neib} dist (P_m,P_n)    \right)$
+$\min_{P_n, n = 1,2,...,N} \left( \sum^N_{n=1} cost(P_n) + \kappa \sum_{(m,n)\in Neib} dist (P_m,P_n)    \right)$
 
 where $P_n$ denotes the warping path for the $n_{th}$ time series pair, $N$ is the total number of time series pairs that are jointly aligned, 
 $cost(P_n)$ is the alignment cost of the $n_{th}$ time series pair, $dist(P_m, P_n)$ is the warping path distance defined by the area of the region bounded by $P_m$ and $P_n$.
@@ -55,7 +55,7 @@ Water, tube, tank, and partition represent excess, cross edge, subgraph, and cut
 Bidirectional-pushing stategy utilizes the easy-obtained initialization. It segments the original graph according to the initialization and then push excess and deficit in two opposite directions. Through such strategy, it can avoid some meaningless and redundant computation for push-relabel based methods.
 
 <p align="center">
-  <img height="300" src="img/Fig4.png">
+  <img height="250" src="img/Fig4.png">
 </p>
 
 * Initialization: Estimate initial cut $C_0$ for GTW graph. The corresponding source side and sink side are denoted as $V_{S_0}$ and $V_{T_0}$, respectively.
@@ -78,7 +78,7 @@ To make hyperparameter $\kappa$ comparable, we normalized the synthetic data by 
 We tested 20 instances for each combination of $N$, $T$, and $\kappa$.
 
 <p align="center">
-  <img height="250" src="img/Fig_syn.png">
+  <img height="500" src="img/Fig_syn.png">
 </p>
 (a)-(d) compare the running time and memory usage under different graph size. (e) compares the running time of max-flow methods under different $\kappa$, including BI-HIPR and ELCO.
 
@@ -88,7 +88,7 @@ calculating signal propagation, extracting depth information, and signature iden
 Since all these max-flow methods would give the same results, here we only compare running time and memory usage, as shown in Table. \ref{Table:real}, where in the name represents the spatially downsampled data.
 
 <p align="center">
-  <img height="250" src="img/table.png">
+  <img height="800" src="img/table.png">
 </p>
 
 # Cite
