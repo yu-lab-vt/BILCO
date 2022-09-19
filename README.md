@@ -80,7 +80,7 @@ To make hyperparameter $\kappa$ comparable, we normalized the synthetic data by 
 We tested 20 instances for each combination of $N$, $T$, and $\kappa$.
 
 <p align="center">
-  <img height="500" src="img/Fig_syn.png">
+  <img height="400" src="img/Fig_syn.png">
 </p>
 (a)-(d) compare the running time and memory usage under different graph size. (e) compares the running time of max-flow methods under different $\kappa$, including BI-HIPR and ELCO.
 
@@ -90,7 +90,7 @@ calculating signal propagation, extracting depth information, and signature iden
 Since all these max-flow methods would give the same results, here we only compare running time and memory usage, as shown in Table. \ref{Table:real}, where in the name represents the spatially downsampled data.
 
 <p align="center">
-  <img height="800" src="img/table.png">
+  <img height="600" src="img/table.png">
 </p>
 
 # Cite
