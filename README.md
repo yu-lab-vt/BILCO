@@ -16,7 +16,7 @@ BILCO is implemented in **C++** language with a **MATLAB** wrapper. The reposito
 The joint alignment problem can be formulated as
 
 <p align="center">
-  <img height="50" src="img/formula.png">
+  <img height="150" src="img/formula.png">
 </p>
 
 where $P_n$ denotes the warping path for the $n_{th}$ time series pair, $N$ is the total number of time series pairs that are jointly aligned, 
