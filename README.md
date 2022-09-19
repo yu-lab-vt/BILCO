@@ -14,9 +14,9 @@ BILCO is implemented in **C++** language with a **MATLAB** wrapper. The reposito
 
 ## Joint alignment and GTW
 The joint alignment problem can be formulated as
-<p align="center">
-  <img height="300" src="img/formula.png">
-</p>
+
+\min_{P_n, n = 1,2,...,N} \left( \sum_{n=1}^N cost(P_n) + \kappa \sum_{(m,n)\in Neib} dist (P_m,P_n)    \right)
+
 where $P_n$ denotes the warping path for the $n_{th}$ time series pair, $N$ is the total number of time series pairs that are jointly aligned, 
 $cost(P_n)$ is the alignment cost of the $n_{th}$ time series pair, $dist(P_m, P_n)$ is the warping path distance defined by the area of the region bounded by $P_m$ and $P_n$.
 $Neib$ is the set of pair indices $(m,n)$ representing the adjacent time series, and $\kappa$ is the hyperparameter to balance the alignment cost term and the distance term. For example, for 2D grid time-series data, $Neib$ may include the pair of neighboring pixels, and $\kappa$ represents a prior similarity between the pixels.
