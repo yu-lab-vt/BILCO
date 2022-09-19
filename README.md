@@ -38,7 +38,7 @@ To ensure the monotonicity and continuity of warping paths, the capacities of re
 BILCO contains two major parts, ELCO and bidirectional pushing.
 
 ### ELCO
-ELCO use the component as the basic operation unit and majorly consists of two component operations: **Drain** and **Discharge**. (Each component is a subset of GTW subgraph bounded by two adjacent cuts). It can be described as follows: Initially, each subgraph is one active component. ``Drain'' operation sends maximum excess directly to the sink through edges within subgraph. A new cut will be generated, which blocks some excess in the segmented components near the source. Then it is the turn of ``Discharge'' to seek opportunities to move excess across subgraph toward components that can execute ``Drain''. By executing these two component operations, the global max-flow can be achieved. The whole framework is like the progress of pumping water from multiple water tanks.
+ELCO use the component as the basic operation unit and majorly consists of two component operations: **Drain** and **Discharge**. (Each component is a subset of GTW subgraph bounded by two adjacent cuts). It can be described as follows: Initially, each subgraph is one active component. "Drain" operation sends maximum excess directly to the sink through edges within subgraph. A new cut will be generated, which blocks some excess in the segmented components near the source. Then it is the turn of "Discharge" to seek opportunities to move excess across subgraph toward components that can execute "Drain". By executing these two component operations, the global max-flow can be achieved. The whole framework is like the progress of pumping water from multiple water tanks.
 
 <p align="center">
   <img height="300" src="img/Fig2.png">
