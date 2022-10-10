@@ -17,6 +17,6 @@ function [minCut,maxFlow] = BILCO(ref,tst,Gij,smo,initialCut,winSize,metric)
         winSize = 10000;
     end
     
-    [minCut,maxFlow] = BILCOMex(ref,tst,graphRelation,initialCut,winSize,metric);
+    [minCut,maxFlow] = BILCOMex(double(ref),double(tst),graphRelation,initialCut,winSize,metric);
 end
 
