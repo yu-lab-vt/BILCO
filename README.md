@@ -28,10 +28,10 @@ $Neib$ is the set of pair indices $(m,n)$ representing the adjacent time series,
 </p>
 
 As shown, the equation can be converted to a flow network and solved by finding the min-cut of it. 
-The constructed graph, GTW graph, consisting of $N$ GTW subgraphs $\{G^k = (V^k, E^k)|1\leq n \leq N\}$ and cross edges $E_{cross}$ with capacity $\frac{\kappa}{2}$.
+The constructed graph, GTW graph, consisting of $N$ GTW subgraphs $\{G^n = (V^n, E^n)|1\leq n \leq N\}$ and cross edges $E_{cross}$ with capacity $\frac{\kappa}{2}$.
 The edges within GTW subgraph are called $E_{within}$.
 For convenience, in the following content, we refer to "GTW subgraph" as "subgraph".
-Each subgraph $G^k$ is dual to a DTW graph, which represents the warping between a pair of time series. 
+Each subgraph $G^n$ is dual to a DTW graph, which represents the warping between a pair of time series. 
 The cut within a subgraph is dual to a warping path of the time series pair, and thus the min-cut of one DTW graph can be solved in linear time through DP by finding the shortest path.
 The cross edges constrain the difference between cuts in neighboring subgraphs, corresponding to the distance term in the equation. 
 To ensure the monotonicity and continuity of warping paths, the capacities of reverse edges in each subgraph are set infinite.
