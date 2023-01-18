@@ -22,7 +22,8 @@ subgraphNeiRelations: nPair x 3 matrix. Each row is: [gID1,gID2,cap] represent g
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <string>
+#include <cstring>
 #include <unordered_set>
 #include <unordered_map>
 #include "types_BILCO.h"  /* type definitions */
@@ -124,7 +125,6 @@ unordered_set<component *> candidateSet;                                /* For m
             tempCut[--y] = x<<1;            \
             break;                          \
         default:                            \
-            MATLAB_ASSERT(false, "BILCOMex: Wrong Track");\
             break;                          \
         }                                   \
     }                                       \
@@ -149,7 +149,6 @@ unordered_set<component *> candidateSet;                                /* For m
             ++y;                            \
             break;                          \
         default:                            \
-            MATLAB_ASSERT(false, "BILCOMex: Wrong Track");\
             break;                          \
         }                                   \
     }                                       \
@@ -3656,7 +3655,7 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    char filename[] = "D:\\Research\\Graph_accelerate\\CPR_Final\\sample.inp";
+    char filename[] = "D:\\Research\\Graph_accelerate\\Paper_material\\Supplementary\\code\\sample.inp";
     loadInput(filename);
 
     // printf("Graph size: N = %d, T1 = %d, nPair = %d \n", N, T1, nPair);
