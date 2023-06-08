@@ -95,4 +95,4 @@ Since all these max-flow methods would give the same results, here we only compa
 
 # Cite
 ## Please cite our paper if you find the code useful for your research.
-Xuelong Mi, Mengfan Wang, Alex Bo-Yuan Chen, Jing-Xuan Lim, Yizhi Wang, Misha Ahrens, Guoqiang Yu [BILCO: An Efficient Algorithm for Joint Alignment of Time Series](....), NeurIPS 2022
+Xuelong Mi, Mengfan Wang, Alex Bo-Yuan Chen, Jing-Xuan Lim, Yizhi Wang, Misha Ahrens, Guoqiang Yu [BILCO: An Efficient Algorithm for Joint Alignment of Time Series](https://proceedings.neurips.cc/paper_files/paper/2022/hash/eb5d9195b201ec7ba66c8e20b396d349-Abstract-Conference.html), NeurIPS 2022
